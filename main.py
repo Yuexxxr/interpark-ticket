@@ -54,14 +54,14 @@ main_url = "https://www.globalinterpark.com/main/main"
 # 登录地址
 login_url = "https://www.globalinterpark.com/user/signin?redirectUrl=aHR0cDovL3d3dy5nbG9iYWxpbnRlcnBhcmsuY29tL21haW4vbWFpbg=="
 # 抢购地址
-#target_url = "https://www.globalinterpark.com/detail/edetail?prdNo=23008837&dispNo=01011"
-target_url = "https://www.globalinterpark.com/detail/edetail?prdNo=23007165&dispNo=undefined"
+#target_url = "https://www.globalinterpark.com/ja/product/24008203"
+target_url = "https://www.globalinterpark.com/ja/product/24008203"
 # 登录 打开抢购页面
 def Login():
     # 输入账号 账号输入框：#memEmail
-    driver.find_element(By.ID, "memEmail").send_keys(Email)
+    driver.find_element(By.ID, "2080983278@qq.com").send_keys(Email)
     # 输入密码 密码输入框：#memPass
-    driver.find_element(By.ID, "memPass").send_keys(Password)
+    driver.find_element(By.ID, "Yuexiurui03.").send_keys(Password)
     # 点击登录 登录按钮：#sign_in
     driver.find_element(By.ID, "sign_in").click()
     time.sleep(1)
